@@ -1,17 +1,17 @@
 "use client"
 
-import { useState, type FormEvent } from "react"
-import Link from "next/link"
 import { Loader2, Lock } from "lucide-react"
+import Link from "next/link"
+import { useState, type FormEvent } from "react"
 
+import { registerAction } from "@/app/actions/auth-actions"
 import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
 import { PasswordInput } from "@/components/ui/password-input"
 import { PasswordStrength } from "@/components/ui/password-strength"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Label } from "@/components/ui/label"
 import { calculatePasswordStrength } from "@/lib/encryption"
-import { registerAction } from "@/app/actions/auth-actions"
 
 export default function RegisterPage() {
   const [name, setName] = useState("")
@@ -65,7 +65,7 @@ export default function RegisterPage() {
   }
 
   return (
-    <div className="container flex h-screen flex-col items-center justify-center">
+    <div className="flex h-screen flex-col items-center justify-center">
       <div className="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[350px]">
         <div className="flex flex-col space-y-2 text-center">
           <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">

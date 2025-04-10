@@ -1,15 +1,15 @@
 "use client"
 
-import { useState, type FormEvent } from "react"
-import Link from "next/link"
 import { Loader2, Lock } from "lucide-react"
+import Link from "next/link"
+import { useState, type FormEvent } from "react"
 
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { PasswordInput } from "@/components/ui/password-input"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Label } from "@/components/ui/label"
 import { loginAction } from "@/app/actions/auth-actions"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
+import { PasswordInput } from "@/components/ui/password-input"
 
 export default function LoginPage() {
   const [email, setEmail] = useState("")
@@ -43,7 +43,7 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="container flex h-screen flex-col items-center justify-center">
+    <div className="flex h-screen flex-col items-center justify-center">
       <div className="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[350px]">
         <div className="flex flex-col space-y-2 text-center">
           <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">

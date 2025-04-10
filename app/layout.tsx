@@ -1,3 +1,4 @@
+import { PWARegister } from "@/components/pwa-register"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Toaster } from "@/components/ui/toaster"
 import type { Metadata } from "next"
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           {children}
+          <PWARegister />
           <Toaster />
         </ThemeProvider>
       </body>
@@ -30,4 +32,5 @@ export default function RootLayout({
 }
 
 
-import './globals.css'
+
+
