@@ -57,7 +57,7 @@ Jardim Seguro é um gerenciador de senhas inovador que transforma suas senhas em
 ### Passos para Instalação
 
 1. Clone o repositório:
-```bash
+\`\`\`bash
 git clone https://github.com/GuilhermePeritto/JardinSeguro.git
 cd jardim-seguro
 \`\`\`
