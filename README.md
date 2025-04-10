@@ -88,7 +88,7 @@ npm run dev
 
 ## 📁 Estrutura do Projeto
 
-\`\`\`
+\`\`\`bash
 jardim-seguro/
 ├── app/                    # Rotas e páginas da aplicação (App Router)
 │   ├── api/                # Rotas de API
